@@ -6,8 +6,8 @@
 Write-Host -ForegroundColor Green "--> Setting up enviroment variables..."
 
 # GitHub for Windows https://windows.github.com/
-$env:Path = $env:Path + ";C:\Users\Stephen\AppData\Local\GitHub\PortableGit_8810fd5c2c79c73adcc73fd0825f3b32fdb816e7\cmd"
-$env:Path = $env:Path + ";C:\Users\Stephen\AppData\Local\GitHub\PortableGit_8810fd5c2c79c73adcc73fd0825f3b32fdb816e7\bin"
+$env:Path = $env:Path + ";C:\Users\Stephen\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\cmd"
+$env:Path = $env:Path + ";C:\Users\Stephen\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\bin"
 
 # NodeJS x64 for Windows http://nodejs.org/
 $env:Path = $env:Path + ";C:\Program Files\nodejs"
