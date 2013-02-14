@@ -1,8 +1,13 @@
 {
-	"auto_upgrade_last_run": 1350264015,
+	"auto_upgrade_last_run": null,
+	"git_binary": "C:\\Users\\Stephen\\AppData\\Local\\GitHub\\PortableGit_64179092f39f5dacb60dcab147fb4d04266c0eae\\bin\\git.exe",
 	"installed_packages":
 	[
+		"BracketHighlighter",
+		"Git",
 		"Package Control",
-		"PhpTidy"
+		"PhpTidy",
+		"RegReplace",
+		"Search WordPress Codex"
 	]
 }
