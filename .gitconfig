@@ -1,0 +1,15 @@
+[user]
+	name = Stephen Edgar
+	email = stephen@netweb.com.au
+
+[grep]
+	lineNumber = true
+	extendRegexp = true
+[alias]
+	g = grep --break --heading --line-number
+[core]
+	editor = 'c:/program files/sublime text 2/sublime_text.exe' -w
+
+# https://github.com/ntwb
+# https:twitter.com/netweb
+# http://netweb.com.au
