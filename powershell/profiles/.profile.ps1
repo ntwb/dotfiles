@@ -1,24 +1,33 @@
 ##############################################################################################
 # Load PowerShell Profile .profile.ps1 - https://github.com/ntwb/dotfiles
-# Called from C:\Users\Stephen\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1 
+# Called from C:\Users\Stephen\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1
 ##############################################################################################
 
-Write-Host -ForegroundColor Green "--> Setting up enviroment variables..."
+# Start Loading message
+Write-Host -ForegroundColor Green "--> Begin all the things..."
 
 # GitHub for Windows https://windows.github.com/
 . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
+Write-Host -ForegroundColor White "--> GitHub... Done."
 
 # NodeJS x64 for Windows http://nodejs.org/
 $env:Path = $env:Path + ";C:\Program Files\nodejs"
 $env:Path = $env:Path + ";C:\Users\Stephen\AppData\Roaming\npm"
+Write-Host -ForegroundColor White "--> NodeJS... Done."
 
 # PHP for Windows http://php.net/
 $env:Path = $env:Path + ";C:\PHP"
+Write-Host -ForegroundColor White "--> PHP... Done."
 
 # Python for Windows 2.7.3 http://www.python.org/download/
 $env:Path = $env:Path + ";C:\Python27"
 # Python scripts inside same PowerShell window http://mycomputeradventures.blogspot.com.au/2012/09/python-scripts-inside-powershell-window.html
 $env:PATHEXT += ";.py"
+Write-Host -ForegroundColor White "--> Python... Done."
 
 # Load posh-git example profile
 . 'H:\dev\_git\posh-git\profile.example.ps1'
+Write-Host -ForegroundColor White "--> PoSh-Git... Done."
+
+# Finish loading message
+Write-Host -ForegroundColor Green "--> Finish all the things..."
