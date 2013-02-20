@@ -5,8 +5,11 @@
 [grep]
 	lineNumber = true
 	extendRegexp = true
+
 [alias]
 	g = grep --break --heading --line-number
+	l = log --abbrev-commit --decorate  --graph -n 20 --pretty=oneline
+
 [core]
 	editor = 'c:/program files/sublime text 2/sublime_text.exe' -w
 
