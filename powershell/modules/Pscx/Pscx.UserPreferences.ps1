@@ -22,7 +22,7 @@
     CD_EchoNewLocation = $true        # Display new provider location after using cd (Set-LocationEx).
                                       # Mutually exclusive with CD_GetChildItem.
 
-    TextEditor = 'Notepad.exe'        # Default text editor used by the Edit-File function
+    TextEditor = 'subl'               # Default text editor used by the Edit-File function
 
     PromptTheme = 'Modern'            # Prompt string and window title updates.  To enable, first
                                       # set the ModulesToImport setting for Prompt below to $true.
@@ -43,16 +43,16 @@
                                       # If this value is set to $true, file sizes are displayed in
                                       # using KB,MG,GB and TB units.
 
-  ModulesToImport = @{
-    CD                = $true
-    DirectoryServices = $true
-    FileSystem        = $true
-    GetHelp           = $true
-    Net               = $true
-    Prompt            = $false    # Disabled by default because a lot of users have already established prompt functions.
-    TranscribeSession = $false    # Disabled by default for security and privacy reasons.
-    Utility           = $true
-    Vhd               = $true
-    Wmi               = $true
-  }
+	ModulesToImport = @{
+		CD                = $true
+		DirectoryServices = $true
+		FileSystem        = $true
+		GetHelp           = $true
+		Net               = $true
+		Prompt            = $false    # Disabled by default because a lot of users have already established prompt functions.
+		TranscribeSession = $false    # Disabled by default for security and privacy reasons.
+		Utility           = $true
+		Vhd               = $true
+		Wmi               = $true
+	}
 }
