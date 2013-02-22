@@ -42,5 +42,9 @@ Write-Host -ForegroundColor White "--> PoSh-Git... Done."
 Import-Module Pscx
 Write-Host -ForegroundColor White "--> PoSh-Git... Done."
 
+# Load PsGet Module https://github.com/psget/psget/
+Import-Module PsGet
+Write-Host -ForegroundColor White "--> PsGet... Done."
+
 # Finish loading message
 Write-Host -ForegroundColor Green "--> Finish all the things..."
