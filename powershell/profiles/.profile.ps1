@@ -29,5 +29,9 @@ Write-Host -ForegroundColor White "--> Python... Done."
 . 'H:\dev\_git\posh-git\profile.example.ps1'
 Write-Host -ForegroundColor White "--> PoSh-Git... Done."
 
+# Load PowerShell Community Extension 3.0 Module
+Import-Module Pscx
+Write-Host -ForegroundColor White "--> PoSh-Git... Done."
+
 # Finish loading message
 Write-Host -ForegroundColor Green "--> Finish all the things..."
