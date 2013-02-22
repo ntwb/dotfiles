@@ -11,6 +11,10 @@ $env:PSModulePath = $env:PSModulePath + ";C:\Users\Stephen\.dotfiles\powershell\
 $env:Path         = $env:Path         + ";C:\Users\Stephen\.dotfiles\powershell\profiles"
 Write-Host -ForegroundColor White "--> PowerShell profiles & modules... Done."
 
+# Setup Sublime Text 2 alias & path
+Set-Alias subl "C:\Program Files\Sublime Text 2\sublime_text.exe"
+Write-Host -ForegroundColor White "--> Sublime Text 2 'subl' alias... Done."
+
 # GitHub for Windows https://windows.github.com/
 . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
 Write-Host -ForegroundColor White "--> GitHub... Done."
