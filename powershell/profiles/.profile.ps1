@@ -40,11 +40,15 @@ Write-Host -ForegroundColor White "--> PoSh-Git... Done."
 
 # Load PowerShell Community Extension 3.0 Module
 Import-Module Pscx
-Write-Host -ForegroundColor White "--> PoSh-Git... Done."
+Write-Host -ForegroundColor White "--> Pscx... Done."
 
 # Load PsGet Module https://github.com/psget/psget/
 Import-Module PsGet
 Write-Host -ForegroundColor White "--> PsGet... Done."
+
+# Load posh-npm profile https://github.com/MSOpenTech/posh-npm
+. 'C:\Users\Stephen\.dotfiles\powershell\modules\posh-npm\profile.example.ps1'
+Write-Host -ForegroundColor White "--> posh-npm... Done."
 
 # Finish loading message
 Write-Host -ForegroundColor Green "--> Finish all the things..."
