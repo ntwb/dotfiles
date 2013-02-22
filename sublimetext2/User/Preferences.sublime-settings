@@ -3,13 +3,19 @@
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"default_line_ending": "unix",
-	"font_face": "Source Code Pro", // https://github.com/adobe/source-code-pro
+	"font_face": "Source Code Pro",
 	"font_size": 14,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
-	"ignored_packages": ["Vintage"],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"margin": 4,
-	"rulers": [	80 ],
+	"rulers":
+	[
+		80
+	],
 	"soda_classic_tabs": true,
 	"tab_size": 4,
 	"theme": "Soda Dark.sublime-theme",
