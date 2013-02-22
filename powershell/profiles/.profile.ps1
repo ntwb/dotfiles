@@ -6,6 +6,11 @@
 # Start Loading message
 Write-Host -ForegroundColor Green "--> Begin all the things..."
 
+# Setup local envionment paths
+$env:PSModulePath = $env:PSModulePath + ";C:\Users\Stephen\.dotfiles\powershell\modules\"
+$env:Path         = $env:Path         + ";C:\Users\Stephen\.dotfiles\powershell\profiles"
+Write-Host -ForegroundColor White "--> PowerShell profiles & modules... Done."
+
 # GitHub for Windows https://windows.github.com/
 . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
 Write-Host -ForegroundColor White "--> GitHub... Done."
