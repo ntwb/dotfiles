@@ -5,6 +5,7 @@
 	[
 		"BracketHighlighter",
 		"Git",
+		"LESS",
 		"LiveReload",
 		"Package Control",
 		"PhpTidy",
