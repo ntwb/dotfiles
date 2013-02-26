@@ -7,4 +7,4 @@ Windows (Powershell)
 cmd /c mklink %USERPROFILE%\.gitconfig %USERPROFILE%\.dotfiles\.gitconfig
 
 Windows Path Environment Variable
-path = %path%;C:\Users\Stephen\AppData\Local\GitHub\PortableGit_64179092f39f5dacb60dcab147fb4d04266c0eae\bin
+path = %path%;C:\Users\Stephen\AppData\Local\GitHub\PortableGit_93e8418133eb85e81a81e5e19c272776524496c6\bin
