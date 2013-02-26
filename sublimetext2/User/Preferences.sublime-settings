@@ -3,6 +3,7 @@
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
 	"default_line_ending": "unix",
+	"detect_indentation": false,
 	"font_face": "Source Code Pro",
 	"font_size": 14,
 	"highlight_line": false,
