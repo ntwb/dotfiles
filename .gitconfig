@@ -8,7 +8,7 @@
 
 [alias]
 	g = grep --break --heading --line-number
-	l = log --abbrev-commit --decorate  --graph -n 20 --pretty=oneline
+	l = log --abbrev-commit --graph -n 20 --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 
 [core]
 	editor = 'c:/program files/sublime text 2/sublime_text.exe' -w
