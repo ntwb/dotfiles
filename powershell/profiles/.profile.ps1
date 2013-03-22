@@ -24,6 +24,11 @@ $env:Path = $env:Path + ";C:\Program Files\nodejs"
 $env:Path = $env:Path + ";C:\Users\Stephen\AppData\Roaming\npm"
 Write-Host -ForegroundColor White "--> NodeJS... Done."
 
+# Ruby for Windows https://github.com/oneclick/rubyinstaller
+$env:Path = $env:Path + ";C:\Ruby193\bin"
+Write-Host -ForegroundColor White "--> Ruby... Done."
+;
+
 # PHP for Windows http://php.net/
 $env:Path = $env:Path + ";C:\PHP"
 Write-Host -ForegroundColor White "--> PHP... Done."
