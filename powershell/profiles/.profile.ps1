@@ -42,10 +42,6 @@ Write-Host -ForegroundColor White "--> Python... Done."
 . 'H:\dev\_git\posh-git\profile.example.ps1'
 Write-Host -ForegroundColor White "--> PoSh-Git... Done."
 
-# Load PowerTab
-Import-Module PowerTab -ArgumentList "C:\Users\Stephen\.dotfiles\powershell\modules\PowerTab\PowerTabConfig.xml"
-Write-Host -ForegroundColor White "--> PowerTab... Done."
-
 # Load PowerShell Community Extension 3.0 Module
 Import-Module Pscx
 Write-Host -ForegroundColor White "--> Pscx... Done."
