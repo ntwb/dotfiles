@@ -43,7 +43,7 @@ Write-Host -ForegroundColor White "--> Python... Done."
 Write-Host -ForegroundColor White "--> PoSh-Git... Done."
 
 # Load PowerShell Community Extension 3.0 Module
-Import-Module Pscx
+Import-Module Pscx -arg "C:\Users\Stephen\.dotfiles\powershell\modules\Pscx\Pscx.UserPreferences.ps1"
 Write-Host -ForegroundColor White "--> Pscx... Done."
 
 # Load PsGet Module https://github.com/psget/psget/
