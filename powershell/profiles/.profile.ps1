@@ -36,7 +36,7 @@ Write-Host -ForegroundColor White "--> NodeJS... Done."
     }
 
     else {
-        Write-Host -ForegroundColor Magenta " Not found"
+        Write-Host -ForegroundColor Red " Not found"
     }
 
     $env:Path = $env:Path + ";$RubyPath\bin"
@@ -50,7 +50,7 @@ Write-Host -ForegroundColor White "--> NodeJS... Done."
     }
 
     else {
-        Write-Host -ForegroundColor Magenta " Not found"
+        Write-Host -ForegroundColor Red " Not found"
     }
 
     $env:Path = $env:Path + ";$PHPPath"
@@ -80,7 +80,7 @@ Write-Host -ForegroundColor White "--> NodeJS... Done."
     }
 
     else {
-        Write-Host -ForegroundColor Magenta " Not found"
+        Write-Host -ForegroundColor Red " Not found"
     }
 
     $env:Path = $env:Path + ";$PythonHome"
