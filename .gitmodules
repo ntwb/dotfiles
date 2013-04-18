@@ -5,5 +5,5 @@
 	path = fonts/source-sans-pro
 	url = git://github.com/adobe/source-sans-pro.git
 [submodule "themes/chrome-developer-tools"]
-	path = themes/source-sans-pro
+	path = themes/chrome-developer-tools
 	url = git://github.com/simonowendesign/SO-Dark-Monokai-v3.git
