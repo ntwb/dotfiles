@@ -43,8 +43,18 @@ Write-Host -ForegroundColor White "--> NodeJS... Done."
     Write-Host -ForegroundColor Magenta "$RubyPath"
 
 # PHP for Windows http://php.net/
-$env:Path = $env:Path + ";C:\PHP"
-Write-Host -ForegroundColor White "--> PHP... Done."
+    Write-Host -nonewline -ForegroundColor Blue "[PHP] "
+
+    if (Test-Path "C:\PHP") {
+        $PHPPath = "C:\PHP"
+    }
+
+    else {
+        Write-Host -ForegroundColor Magenta " Not found"
+    }
+
+    $env:Path = $env:Path + ";$PHPPath"
+    Write-Host -ForegroundColor Magenta "$PHPPath"
 
 # Python for Windows 2.7.3 http://www.python.org/download/
     Write-Host -nonewline -ForegroundColor Blue "[Python] "
