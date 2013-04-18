@@ -33,10 +33,37 @@ $env:Path = $env:Path + ";C:\PHP"
 Write-Host -ForegroundColor White "--> PHP... Done."
 
 # Python for Windows 2.7.3 http://www.python.org/download/
-$env:Path = $env:Path + ";C:\Python27"
+    Write-Host -nonewline -ForegroundColor Blue "[Python] "
+
+    if (Test-Path "C:\Python33") {
+        $env:PythonPath = "C:\Python33;C:\Python33\DLLs;C:\Python33\Lib;C:\Python33\Lib\lib-tk;C:\Python33\Scripts;"
+        $env:PythonHome = "C:\Python33"
+    }
+
+    elseif (Test-Path "C:\Python32") {
+        $env:PythonPath = "C:\Python32;C:\Python32\DLLs;C:\Python32\Lib;C:\Python32\Lib\lib-tk;C:\Python32\Scripts;"
+        $env:PythonHome = "C:\Python32"
+    }
+
+    elseif (Test-Path "C:\Python27") {
+        $env:PythonPath = "C:\Python27;C:\Python27\DLLs;C:\Python27\Lib;C:\Python27\Lib\lib-tk;C:\Python27\Scripts;"
+        $env:PythonHome = "C:\Python27"
+    }
+
+    elseif (Test-Path "C:\Python26") {
+        $env:PythonPath = "C:\Python26;C:\Python26\DLLs;C:\Python26\Lib;C:\Python26\Lib\lib-tk;C:\Python26\Scripts;"
+        $env:PythonHome = "C:\Python26"
+    }
+
+    else {
+        Write-Host -ForegroundColor Magenta " Not found"
+    }
+
+    $env:Path = $env:Path + ";$PythonHome"
+    Write-Host -ForegroundColor Magenta "$env:PythonHome"
+
 # Python scripts inside same PowerShell window http://mycomputeradventures.blogspot.com.au/2012/09/python-scripts-inside-powershell-window.html
-$env:PATHEXT += ";.py"
-Write-Host -ForegroundColor White "--> Python... Done."
+    $env:PATHEXT += ";.py"
 
 # Load posh-git example profile
 . 'H:\dev\_git\posh-git\profile.example.ps1'
