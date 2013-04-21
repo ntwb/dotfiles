@@ -6,6 +6,13 @@
 # Start Loading message
 Write-Host -ForegroundColor Green "--> Begin all the things..."
 
+# Start Loading message
+Write-Host -ForegroundColor Green "--> Setup PowerShell Environment..."
+
+# Load posh-monokai https://github.com/ntwb/posh-monokai
+Write-Host -ForegroundColor White "--> [posh-monokai] Windows PowerShell Monokai Console Color Scheme"
+. 'H:\dev\_git\posh-monokai\posh-monokai.ps1'
+
 # Setup local envionment paths
 $env:PSModulePath = $env:PSModulePath + ";C:\Users\Stephen\.dotfiles\powershell\modules\"
 $env:Path         = $env:Path         + ";C:\Users\Stephen\.dotfiles\powershell\profiles"
