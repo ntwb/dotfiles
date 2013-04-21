@@ -13,6 +13,28 @@
 [core]
 	editor = 'c:/program files/sublime text 2/sublime_text.exe' -w
 
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[color "diff"]
+  whitespace = blue reverse
+  meta = white
+  frag = yellow
+  old = red
+  new = green
+
+[color "status"]
+  changed = yellow
+  added = green
+  untracked = red
+
+[color "branch"]
+  current = green reverse
+  local = green
+  remote = blue
+
 # https://github.com/ntwb
 # https:twitter.com/netweb
 # http://netweb.com.au
