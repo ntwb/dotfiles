@@ -29,6 +29,23 @@ Write-Host -ForegroundColor Green "--> Import PowerShell Modules..."
 . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
 Write-Host -ForegroundColor White "--> GitHub... Done."
 
+# Load posh-git example profile
+. 'H:\dev\_git\posh-git\profile.example.ps1'
+Write-Host -ForegroundColor White "--> PoSh-Git... Done."
+
+# Load PowerShell Community Extension 3.0 Module
+Import-Module Pscx -arg "C:\Users\Stephen\.dotfiles\powershell\modules\Pscx\Pscx.UserPreferences.ps1"
+Write-Host -ForegroundColor White "--> Pscx... Done."
+
+# Load PsGet Module https://github.com/psget/psget/
+Import-Module PsGet
+Write-Host -ForegroundColor White "--> PsGet... Done."
+
+# Load posh-npm profile https://github.com/MSOpenTech/posh-npm
+. 'C:\Users\Stephen\.dotfiles\powershell\modules\posh-npm\profile.example.ps1'
+Write-Host -ForegroundColor White "--> posh-npm... Done."
+
+
 # NodeJS x64 for Windows http://nodejs.org/
 $env:Path = $env:Path + ";C:\Program Files\nodejs"
 $env:Path = $env:Path + ";C:\Users\Stephen\AppData\Roaming\npm"
@@ -98,22 +115,6 @@ Write-Host -ForegroundColor White "--> NodeJS... Done."
 
 # Python scripts inside same PowerShell window http://mycomputeradventures.blogspot.com.au/2012/09/python-scripts-inside-powershell-window.html
     $env:PATHEXT += ";.py"
-
-# Load posh-git example profile
-. 'H:\dev\_git\posh-git\profile.example.ps1'
-Write-Host -ForegroundColor White "--> PoSh-Git... Done."
-
-# Load PowerShell Community Extension 3.0 Module
-Import-Module Pscx -arg "C:\Users\Stephen\.dotfiles\powershell\modules\Pscx\Pscx.UserPreferences.ps1"
-Write-Host -ForegroundColor White "--> Pscx... Done."
-
-# Load PsGet Module https://github.com/psget/psget/
-Import-Module PsGet
-Write-Host -ForegroundColor White "--> PsGet... Done."
-
-# Load posh-npm profile https://github.com/MSOpenTech/posh-npm
-. 'C:\Users\Stephen\.dotfiles\powershell\modules\posh-npm\profile.example.ps1'
-Write-Host -ForegroundColor White "--> posh-npm... Done."
 
 # Finish loading message
 Write-Host -ForegroundColor Green "--> Finish all the things..."
