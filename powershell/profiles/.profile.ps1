@@ -10,49 +10,54 @@ Write-Host -ForegroundColor Green "--> Begin all the things..."
 Write-Host -ForegroundColor Green "--> Setup PowerShell Environment..."
 
 # Load posh-monokai https://github.com/ntwb/posh-monokai
-Write-Host -ForegroundColor White "--> [posh-monokai] Windows PowerShell Monokai Console Color Scheme"
+Write-Host -nonewline -ForegroundColor Cyan "--> [posh-monokai] "
+Write-Host -ForegroundColor Red "Windows PowerShell Monokai Console Color Scheme"
 . 'H:\dev\_git\posh-monokai\posh-monokai.ps1'
 
 # Setup local envionment paths
 $env:PSModulePath = $env:PSModulePath + ";C:\Users\Stephen\.dotfiles\powershell\modules\"
 $env:Path         = $env:Path         + ";C:\Users\Stephen\.dotfiles\powershell\profiles"
-Write-Host -ForegroundColor White "--> PowerShell profiles & modules... Done."
+Write-Host -nonewline -ForegroundColor Cyan "--> [dofiles] "
+Write-Host -ForegroundColor Red "PowerShell profiles & modules... Done."
 
 # Setup Sublime Text 2 alias & path
 Set-Alias subl "C:\Program Files\Sublime Text 2\sublime_text.exe"
-Write-Host -ForegroundColor White "--> Sublime Text 2 'subl' alias... Done."
+Write-Host -nonewline -ForegroundColor Cyan "--> [Sublime Text 2] "
+Write-Host -ForegroundColor Red "--> Sublime Text 2 'subl' alias... Done."
 
 # Import PowerShell Modules
 Write-Host -ForegroundColor Green "--> Import PowerShell Modules..."
 
 # GitHub for Windows https://windows.github.com/
 . (Resolve-Path "$env:LOCALAPPDATA\GitHub\shell.ps1")
-Write-Host -ForegroundColor White "--> GitHub... Done."
+Write-Host -ForegroundColor Cyan "--> [GitHub]"
 
 # Load posh-git example profile
 . 'H:\dev\_git\posh-git\profile.example.ps1'
-Write-Host -ForegroundColor White "--> PoSh-Git... Done."
+Write-Host -ForegroundColor Cyan "--> [PoSh-Git]"
 
 # Load PowerShell Community Extension 3.0 Module
 Import-Module Pscx -arg "C:\Users\Stephen\.dotfiles\powershell\modules\Pscx\Pscx.UserPreferences.ps1"
-Write-Host -ForegroundColor White "--> Pscx... Done."
+Write-Host -ForegroundColor Cyan "--> [Pscx]"
 
 # Load PsGet Module https://github.com/psget/psget/
 Import-Module PsGet
-Write-Host -ForegroundColor White "--> PsGet... Done."
+Write-Host -ForegroundColor Cyan "--> [PsGet]"
 
 # Load posh-npm profile https://github.com/MSOpenTech/posh-npm
 . 'C:\Users\Stephen\.dotfiles\powershell\modules\posh-npm\profile.example.ps1'
-Write-Host -ForegroundColor White "--> posh-npm... Done."
+Write-Host -ForegroundColor Cyan "--> [posh-npm]"
 
+# Setup Developer Frameworks
+Write-Host -ForegroundColor Green "--> Setup Developer Frameworks..."
 
 # NodeJS x64 for Windows http://nodejs.org/
 $env:Path = $env:Path + ";C:\Program Files\nodejs"
 $env:Path = $env:Path + ";C:\Users\Stephen\AppData\Roaming\npm"
-Write-Host -ForegroundColor White "--> NodeJS... Done."
+Write-Host -ForegroundColor Cyan "--> [NodeJS]"
 
 # Ruby for Windows https://github.com/oneclick/rubyinstaller
-    Write-Host -nonewline -ForegroundColor Blue "[Ruby] "
+    Write-Host -nonewline -ForegroundColor Cyan "--> [Ruby]   "
 
     if (Test-Path "C:\Ruby193") {
         $RubyPath = "C:\Ruby193"
@@ -70,7 +75,7 @@ Write-Host -ForegroundColor White "--> NodeJS... Done."
     Write-Host -ForegroundColor Magenta "$RubyPath"
 
 # PHP for Windows http://php.net/
-    Write-Host -nonewline -ForegroundColor Blue "[PHP] "
+    Write-Host -nonewline -ForegroundColor Cyan "--> [PHP]    "
 
     if (Test-Path "C:\PHP") {
         $PHPPath = "C:\PHP"
@@ -84,7 +89,7 @@ Write-Host -ForegroundColor White "--> NodeJS... Done."
     Write-Host -ForegroundColor Magenta "$PHPPath"
 
 # Python for Windows 2.7.3 http://www.python.org/download/
-    Write-Host -nonewline -ForegroundColor Blue "[Python] "
+    Write-Host -nonewline -ForegroundColor Cyan "--> [Python] "
 
     if (Test-Path "C:\Python33") {
         $env:PythonPath = "C:\Python33;C:\Python33\DLLs;C:\Python33\Lib;C:\Python33\Lib\lib-tk;C:\Python33\Scripts;"
