@@ -22,8 +22,9 @@ Write-Host -ForegroundColor Red "PowerShell profiles & modules... Done."
 
 # Setup Sublime Text 2 alias & path
 Set-Alias subl "C:\Program Files\Sublime Text 2\sublime_text.exe"
+$env:EDITOR = "C:\Program Files\Sublime Text 2\sublime_text.exe"
 Write-Host -nonewline -ForegroundColor Cyan "--> [Sublime Text 2] "
-Write-Host -ForegroundColor Red "--> Sublime Text 2 'subl' alias... Done."
+Write-Host -ForegroundColor Red "--> Sublime Text 2 'subl' alias, env:editor variable... Done."
 
 # Import PowerShell Modules
 Write-Host -ForegroundColor Green "--> Import PowerShell Modules..."
