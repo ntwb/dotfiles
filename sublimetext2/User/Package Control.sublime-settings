@@ -4,15 +4,21 @@
 	"installed_packages":
 	[
 		"BracketHighlighter",
+		"EditorConfig",
 		"Git",
+		"Hex-to-RGBA",
+		"HtmlTidy",
 		"LESS",
 		"LiveReload",
 		"Package Control",
 		"PhpTidy",
 		"PowerShell",
 		"RegReplace",
+		"ScopeHunter",
 		"Search WordPress Codex",
 		"SFTP",
-		"Theme - Soda"
+		"SublimeLinter",
+		"Theme - Soda",
+		"Twitter Bootstrap Snippets"
 	]
 }
