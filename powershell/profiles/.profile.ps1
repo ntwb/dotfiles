@@ -12,7 +12,7 @@ Write-Host -ForegroundColor Green "--> Setup PowerShell Environment..."
 # Load posh-monokai https://github.com/ntwb/posh-monokai
 Write-Host -nonewline -ForegroundColor Cyan "--> [posh-monokai] "
 Write-Host -ForegroundColor Red "Windows PowerShell Monokai Console Color Scheme"
-. 'H:\dev\_git\posh-monokai\posh-monokai.ps1'
+. 'C:\Users\Stephen\dev\posh-monokai\posh-monokai.ps1'
 
 # Setup local envionment paths
 $env:PSModulePath = $env:PSModulePath + ";C:\Users\Stephen\.dotfiles\powershell\modules\"
