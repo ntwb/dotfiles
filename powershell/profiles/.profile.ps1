@@ -34,7 +34,7 @@ Write-Host -ForegroundColor Green "--> Import PowerShell Modules..."
 Write-Host -ForegroundColor Cyan "--> [GitHub]"
 
 # Load posh-git example profile
-. 'H:\dev\_git\posh-git\profile.example.ps1'
+. 'C:\Users\Stephen\dev\posh-git\profile.example.ps1'
 Write-Host -ForegroundColor Cyan "--> [PoSh-Git]"
 
 # Load PowerShell Community Extension 3.0 Module
@@ -46,7 +46,7 @@ Import-Module PsGet
 Write-Host -ForegroundColor Cyan "--> [PsGet]"
 
 # Load posh-npm profile https://github.com/MSOpenTech/posh-npm
-. 'C:\Users\Stephen\.dotfiles\powershell\modules\posh-npm\profile.example.ps1'
+. 'C:\Users\Stephen\dev\posh-npm\profile.example.ps1'
 Write-Host -ForegroundColor Cyan "--> [posh-npm]"
 
 # Setup Developer Frameworks
