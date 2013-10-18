@@ -11,20 +11,20 @@ Write-Host -ForegroundColor Green "--> Setup PowerShell Environment..."
 
 # Load posh-monokai https://github.com/ntwb/posh-monokai
 Write-Host -nonewline -ForegroundColor Cyan "--> [posh-monokai] "
-Write-Host -ForegroundColor Red "Windows PowerShell Monokai Console Color Scheme"
+Write-Host -ForegroundColor Magenta "Windows PowerShell Monokai Console Color Scheme"
 . 'C:\Users\Stephen\dev\posh-monokai\posh-monokai.ps1'
 
 # Setup local envionment paths
 $env:PSModulePath = $env:PSModulePath + ";C:\Users\Stephen\.dotfiles\powershell\modules\"
 $env:Path         = $env:Path         + ";C:\Users\Stephen\.dotfiles\powershell\profiles"
 Write-Host -nonewline -ForegroundColor Cyan "--> [dofiles] "
-Write-Host -ForegroundColor Red "PowerShell profiles & modules... Done."
+Write-Host -ForegroundColor Magenta "PowerShell profiles & modules... Done."
 
 # Setup Sublime Text 2 alias & path
 Set-Alias subl "C:\Program Files\Sublime Text 2\sublime_text.exe"
 $env:EDITOR = "C:\Program Files\Sublime Text 2\sublime_text.exe"
 Write-Host -nonewline -ForegroundColor Cyan "--> [Sublime Text 2] "
-Write-Host -ForegroundColor Red "--> Sublime Text 2 'subl' alias, env:editor variable... Done."
+Write-Host -ForegroundColor Magenta "--> Sublime Text 2 'subl' alias, env:editor variable... Done."
 
 # Import PowerShell Modules
 Write-Host -ForegroundColor Green "--> Import PowerShell Modules..."
