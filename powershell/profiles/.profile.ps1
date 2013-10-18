@@ -37,6 +37,10 @@ Write-Host -ForegroundColor Cyan "--> [GitHub]"
 . 'C:\Users\Stephen\dev\posh-git\profile.example.ps1'
 Write-Host -ForegroundColor Cyan "--> [PoSh-Git]"
 
+# Load posh-svn example profile
+. 'C:\Users\Stephen\dev\posh-svn\profile.example.ps1'
+Write-Host -ForegroundColor Cyan "--> [PoSh-Svn]"
+
 # Load PowerShell Community Extension 3.0 Module
 Import-Module Pscx -arg "C:\Users\Stephen\.dotfiles\powershell\modules\Pscx\Pscx.UserPreferences.ps1"
 Write-Host -ForegroundColor Cyan "--> [Pscx]"
