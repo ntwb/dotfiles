@@ -2,16 +2,19 @@
 	name = Stephen Edgar
 	email = stephen@netweb.com.au
 
+[credential]
+
 [grep]
 	lineNumber = true
 	extendRegexp = true
 
 [alias]
 	g = grep --break --heading --line-number
-	l = log --abbrev-commit --graph -n 20 --pretty=format:'%Cgreen(%cr) %C(magenta)%h%Creset %C(cyan)%d%Creset %s %C(yellow)<%an>%Creset'
+	l = log --abbrev-commit --graph -n 20 --format=format:'%C(green)(%cr) %C(magenta)%h%C(reset) %C(cyan)%d%C(reset) %s %C(yellow)<%an>%C(reset)'
+#	    log --abbrev-commit --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(bold white)- %cn%C(reset)%C(bold yellow)%d%C(reset)'
 
 [core]
-	editor = 'c:/program files/sublime text 2/sublime_text.exe' -w
+	editor = 'C:/Users/Stephen/.sublimetext/sublime_text.exe' -w
 
 [color]
   diff = auto
