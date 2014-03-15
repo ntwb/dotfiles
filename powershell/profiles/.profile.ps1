@@ -56,11 +56,6 @@ Write-Host -ForegroundColor Cyan "--> [posh-npm]"
 # Setup Developer Frameworks
 Write-Host -ForegroundColor Green "--> Setup Developer Frameworks..."
 
-# NodeJS x64 for Windows http://nodejs.org/
-$env:Path = $env:Path + ";C:\Program Files\nodejs"
-$env:Path = $env:Path + ";C:\Users\Stephen\AppData\Roaming\npm"
-Write-Host -ForegroundColor Cyan "--> [NodeJS]"
-
 # PHP for Windows http://php.net/
     Write-Host -nonewline -ForegroundColor Cyan "--> [PHP]    "
 
