@@ -20,11 +20,11 @@ $env:Path         = $env:Path         + ";C:\Users\Stephen\.dotfiles\powershell\
 Write-Host -nonewline -ForegroundColor Cyan "--> [dofiles] "
 Write-Host -ForegroundColor Magenta "PowerShell profiles & modules... Done."
 
-# Setup Sublime Text 2 alias & path
-Set-Alias subl "C:\Program Files\Sublime Text 2\sublime_text.exe"
-$env:EDITOR = "C:\Program Files\Sublime Text 2\sublime_text.exe"
-Write-Host -nonewline -ForegroundColor Cyan "--> [Sublime Text 2] "
-Write-Host -ForegroundColor Magenta "--> Sublime Text 2 'subl' alias, env:editor variable... Done."
+# Setup Sublime Text 3 alias & path
+Set-Alias subl "$HOME.sublimetext\sublime_text.exe"
+$env:EDITOR = $HOME + ".sublimetext\sublime_text.exe"
+Write-Host -nonewline -ForegroundColor Cyan "--> [Sublime Text 3] "
+Write-Host -ForegroundColor Magenta "--> Sublime Text 3 'subl' alias, env:editor variable... Done."
 
 # Import PowerShell Modules
 Write-Host -ForegroundColor Green "--> Import PowerShell Modules..."
