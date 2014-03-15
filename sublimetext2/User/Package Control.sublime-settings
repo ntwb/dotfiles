@@ -1,24 +1,17 @@
 {
-	"auto_upgrade_last_run": null,
-	"git_binary": "C:\\Users\\Stephen\\AppData\\Local\\GitHub\\PortableGit_015aa71ef18c047ce8509ffb2f9e4bb0e3e73f13\\bin\\git.exe",
 	"installed_packages":
 	[
+		"Base16 Color Schemes",
 		"BracketHighlighter",
 		"EditorConfig",
 		"Git",
-		"Hex-to-RGBA",
-		"HtmlTidy",
+		"HTML-CSS-JS Prettify",
 		"LESS",
-		"LiveReload",
-		"Package Control",
-		"PhpTidy",
+		"Markdown Extended",
+		"Monokai Extended",
 		"PowerShell",
-		"RegReplace",
-		"ScopeHunter",
-		"Search WordPress Codex",
-		"SFTP",
-		"SublimeLinter",
+		"Search WordPress Codex or QueryPosts",
 		"Theme - Soda",
-		"Twitter Bootstrap Snippets"
+		"Xdebug Client"
 	]
 }
