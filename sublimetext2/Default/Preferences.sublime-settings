@@ -1,5 +1,5 @@
-// While you can edit this file, it's best to put your changes in
-// "User/Preferences.sublime-settings", which overrides the settings in here.
+// Place your settings in the file "User/Preferences.sublime-settings", which
+// overrides the settings in here.
 //
 // Settings may also be placed in file type specific options files, for
 // example, in Packages/Python/Python.sublime-settings for python files.
@@ -15,7 +15,8 @@
     "font_size": 10,
 
     // Valid options are "no_bold", "no_italic", "no_antialias", "gray_antialias",
-    // "subpixel_antialias", "no_round" (OS X only) and "directwrite" (Windows only)
+    // "subpixel_antialias", "no_round" (OS X only), "gdi" (Windows only) and
+    // "directwrite" (Windows only)
     "font_options": [],
 
     // Characters that are considered to separate words
@@ -43,10 +44,10 @@
     "spell_check": false,
 
     // The number of spaces a tab is considered equal to
-    "tab_size": 2,
+    "tab_size": 4,
 
     // Set to true to insert spaces when tab is pressed
-    "translate_tabs_to_spaces": true,
+    "translate_tabs_to_spaces": false,
 
     // If translate_tabs_to_spaces is true, use_tab_stops will make tab and
     // backspace insert/delete up to the next tabstop
@@ -97,11 +98,20 @@
     // the color scheme
     "draw_minimap_border": false,
 
+    // Always visualise the viewport on the minimap, as oppossed to only
+    // showing it on mouse over
+    "always_show_minimap_viewport": false,
+
     // If enabled, will highlight any line with a caret
     "highlight_line": false,
 
-    // Valid values are "smooth", "phase", "blink", "wide" and "solid".
+    // Valid values are "smooth", "phase", "blink" and "solid".
     "caret_style": "smooth",
+
+    // These settings control the size of the caret
+    "caret_extra_top": 0,
+    "caret_extra_bottom": 0,
+    "caret_extra_width": 0,
 
     // Set to false to disable underlining the brackets surrounding the caret
     "match_brackets": true,
@@ -171,6 +181,10 @@
     // or application
     "save_on_focus_lost": false,
 
+    // Save via writing to an alternate file, and then renaming it over the
+    // original file.
+    "atomic_save": true,
+
     // The encoding to use when the encoding can't be determined automatically.
     // ASCII, UTF-8 and UTF-16 encodings will be automatically detected.
     "fallback_encoding": "Western (Windows 1252)",
@@ -206,7 +220,7 @@
     "auto_complete_delay": 50,
 
     // Controls what scopes auto complete will be triggered in
-    "auto_complete_selector": "source - comment",
+    "auto_complete_selector": "source - comment, meta.tag - punctuation.definition.tag.begin",
 
     // Additional situations to trigger auto complete
     "auto_complete_triggers": [ {"selector": "text.html", "characters": "<"} ],
@@ -221,6 +235,9 @@
     // Only relevant if auto_complete_commit_on_tab is true.
     "auto_complete_with_fields": false,
 
+    // Automatically close HTML and XML tags when </ is entered.
+    "auto_close_tags": true,
+
     // By default, shift+tab will only unindent if the selection spans
     // multiple lines. When pressing shift+tab at other times, it'll insert a
     // tab character - this allows tabs to be inserted when tab_completion is
@@ -228,14 +245,22 @@
     // inserting tabs.
     "shift_tab_unindent": false,
 
+    // If true, the copy and cut commands will operate on the current line
+    // when the selection is empty, rather than doing nothing.
+    "copy_with_empty_selection": true,
+
     // If true, the selected text will be copied into the find panel when it's
     // shown.
     // On OS X, this value is overridden in the platform specific settings, so
     // you'll need to place this line in your user settings to override it.
     "find_selected_text": true,
 
+    // When auto_find_in_selection is enabled, the "Find in Selection" flag
+    // will be enabled automatically when multiple lines of text are selected
+    "auto_find_in_selection": false,
+
     // When drag_text is enabled, clicking on selected text will begin a
-    // drag-drop operation
+    // drag-drop operation. This is not currently implemented under Linux.
     "drag_text": true,
 
     //
@@ -252,6 +277,9 @@
     // Controls side bar animation when expanding or collapsing folders
     "tree_animation_enabled": true,
 
+    // Controls animation throughout the application
+    "animation_enabled": true,
+
     // Makes tabs with modified files more visible
     "highlight_modified_tabs": false,
 
@@ -260,12 +288,28 @@
     // Show folders in the side bar in bold
     "bold_folder_labels": false,
 
-    // OS X 10.7 only: Set to true to disable Lion style full screen support.
+    // OS X only: Set to true to disable Lion style full screen support.
     // Sublime Text must be restarted for this to take effect.
     "use_simple_full_screen": false,
 
+    // OS X only. Valid values are true, false, and "auto". Auto will enable
+    // the setting when running on a screen 2560 pixels or wider (i.e., a
+    // Retina display). When this setting is enabled, OpenGL is used to
+    // accelerate drawing. Sublime Text must be restarted for changes to take
+    // effect.
+    "gpu_window_buffer": "auto",
+
     // Valid values are "system", "enabled" and "disabled"
     "overlay_scroll_bars": "system",
+
+    // Allows tabs to scroll left and right, instead of simply shrinking
+    "enable_tab_scrolling": true,
+
+    // Display file encoding in the status bar
+    "show_encoding": false,
+
+    // Display line endings in the status bar
+    "show_line_endings": false,
 
     //
     // Application Behavior Settings
@@ -284,6 +328,12 @@
     // open files. Changing this to false will have no effect if hot_exit is
     // true
     "remember_open_files": true,
+
+    // Always prompt before reloading a file, even if the file hasn't been
+    // modified. The default behavior is to automatically reload a file if it
+    // hasn't been edited. If a file has unsaved changes, a prompt will always
+    // be shown.
+    "always_prompt_for_file_reload": false,
 
     // OS X only: When files are opened from finder, or by dragging onto the
     // dock icon, this controls if a new window is created or not.
@@ -314,10 +364,26 @@
     // are listed in folders on the side bar. These can also be set on a per-
     // project basis.
     "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS"],
-    "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db"],
+    "file_exclude_patterns": ["*.pyc", "*.pyo", "*.exe", "*.dll", "*.obj","*.o", "*.a", "*.lib", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", "*.pdb", "*.idb", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace"],
     // These files will still show up in the side bar, but won't be included in
     // Goto Anything or Find in Files
     "binary_file_patterns": ["*.jpg", "*.jpeg", "*.png", "*.gif", "*.ttf", "*.tga", "*.dds", "*.ico", "*.eot", "*.pdf", "*.swf", "*.jar", "*.zip"],
+
+    // File indexing parses all files in the side bar, and builds an index of
+    // their symbols. This is required for Goto Definition to work.
+    "index_files": true,
+
+    // index_exclude_patterns indicate which files won't be indexed.
+    "index_exclude_patterns": ["*.log"],
+
+    // When enabled, anonymised usage data is sent back, assisting Sublime HQ
+    // in making informed decisions about improving Sublime Text. File names
+    // and file contents are never included, but data such as computer
+    // specifications, startup time, installed packages, and edited file types
+    // are. When disabled, telemetry is neither recorded or sent.
+    // A setting of auto will enable telemetry in dev builds, and disable
+    // telemetry in regular builds.
+    "enable_telemetry": "auto",
 
     // List any packages to ignore here. When removing entries from this list,
     // a restart may be required if the package contains plugins.
