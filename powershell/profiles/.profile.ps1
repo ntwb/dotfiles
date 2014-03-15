@@ -61,24 +61,6 @@ $env:Path = $env:Path + ";C:\Program Files\nodejs"
 $env:Path = $env:Path + ";C:\Users\Stephen\AppData\Roaming\npm"
 Write-Host -ForegroundColor Cyan "--> [NodeJS]"
 
-# Ruby for Windows https://github.com/oneclick/rubyinstaller
-    Write-Host -nonewline -ForegroundColor Cyan "--> [Ruby]   "
-
-    if (Test-Path "C:\Ruby193") {
-        $RubyPath = "C:\Ruby193"
-    }
-
-    elseif (Test-Path "C:\Ruby192") {
-        $RubyPath = "C:\Ruby192"
-    }
-
-    else {
-        Write-Host -ForegroundColor Red " Not found"
-    }
-
-    $env:Path = $env:Path + ";$RubyPath\bin"
-    Write-Host -ForegroundColor Magenta "$RubyPath"
-
 # PHP for Windows http://php.net/
     Write-Host -nonewline -ForegroundColor Cyan "--> [PHP]    "
 
