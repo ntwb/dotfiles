@@ -3,3 +3,5 @@ Thumbs.db
 
 # Mac crap
 .DS_Store
+
+bin/ansicon/
