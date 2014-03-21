@@ -87,6 +87,25 @@ Write-Host -ForegroundColor DarkGreen "--> Setup Developer Frameworks..."
 
 # Python scripts inside same PowerShell window http://mycomputeradventures.blogspot.com.au/2012/09/python-scripts-inside-powershell-window.html
     $env:PATHEXT += ";.py"
+# Setup WordPress Environment
+Write-Host -ForegroundColor DarkGreen "--> Setup WordPress Environment..."
+
+# Setup WordPress PHPUnit tests
+$env:WP_TESTS_DIR = "C:\xampp\htdocs\develop.wp.nw"
+Write-Host -nonewline -ForegroundColor DarkRed "--> [WordPress] "
+Write-Host -ForegroundColor DarkMagenta " --> WordPress PHPUnit  -> WP_TESTS_DIR   = $env:WP_TESTS_DIR variable... Done."
+
+$env:WP_DEVELOP_DIR = "C:\xampp\htdocs\develop.wp.nw\"
+Write-Host -nonewline -ForegroundColor DarkRed "--> [WordPress] "
+Write-Host -ForegroundColor DarkMagenta " --> WordPress PHPUnit  -> WP_DEVELOP_DIR = $env:WP_DEVELOP_DIR variable... Done."
+
+$env:BP_TESTS_DIR = "F:\buddypress\tests"
+Write-Host -nonewline -ForegroundColor DarkRed "--> [BuddyPress] "
+Write-Host -ForegroundColor DarkMagenta "--> BuddyPress PHPUnit -> BP_TESTS_DIR   = $env:BP_TESTS_DIR variable... Done."
+
+$env:BBP_TESTS_DIR = "F:\bbPress\tests"
+Write-Host -nonewline -ForegroundColor DarkRed "--> [bbPress] "
+Write-Host -ForegroundColor DarkMagenta "   --> bbPress PHPUnit    -> BBP_TESTS_DIR  = $env:BBP_TESTS_DIR variable... Done."
 
 # Finish loading message
 Write-Host -ForegroundColor DarkGreen "--> Finish all the things..."
