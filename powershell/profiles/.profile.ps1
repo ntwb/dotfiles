@@ -71,6 +71,12 @@ Write-Host -ForegroundColor DarkRed "--> [posh-npm]"
 # Setup Developer Frameworks
 Write-Host -ForegroundColor DarkGreen "--> Setup Developer Frameworks..."
 
+# check for Nginx
+$nginx = scoop which nginx
+if($lastexitcode -ne 0) { 'Nginx isn''t installed. run ''scoop install nginx'''; return }
+Write-Host -nonewline -ForegroundColor DarkRed "--> [Nginx] "
+Write-Host  -ForegroundColor DarkMagenta "     --> Nginx              -> $nginx "
+
 # PHP for Windows http://php.net/
     Write-Host -nonewline -ForegroundColor DarkRed "--> [PHP]    "
 
@@ -83,7 +89,7 @@ Write-Host -ForegroundColor DarkGreen "--> Setup Developer Frameworks..."
     }
 
     $env:Path = $env:Path + ";$PHPPath"
-    Write-Host -ForegroundColor DarkMagenta "$PHPPath"
+    Write-Host -ForegroundColor DarkMagenta "    --> $PHPPath"
 
 # Python scripts inside same PowerShell window http://mycomputeradventures.blogspot.com.au/2012/09/python-scripts-inside-powershell-window.html
     $env:PATHEXT += ";.py"
@@ -93,19 +99,19 @@ Write-Host -ForegroundColor DarkGreen "--> Setup WordPress Environment..."
 # Setup WordPress PHPUnit tests
 $env:WP_TESTS_DIR = "C:\xampp\htdocs\develop.wp.nw"
 Write-Host -nonewline -ForegroundColor DarkRed "--> [WordPress] "
-Write-Host -ForegroundColor DarkMagenta " --> WordPress PHPUnit  -> WP_TESTS_DIR   = $env:WP_TESTS_DIR variable... Done."
+Write-Host -ForegroundColor DarkMagenta " --> WordPress PHPUnit  -> WP_TESTS_DIR   = $env:WP_TESTS_DIR"
 
 $env:WP_DEVELOP_DIR = "C:\xampp\htdocs\develop.wp.nw\"
 Write-Host -nonewline -ForegroundColor DarkRed "--> [WordPress] "
-Write-Host -ForegroundColor DarkMagenta " --> WordPress PHPUnit  -> WP_DEVELOP_DIR = $env:WP_DEVELOP_DIR variable... Done."
+Write-Host -ForegroundColor DarkMagenta " --> WordPress PHPUnit  -> WP_DEVELOP_DIR = $env:WP_DEVELOP_DIR"
 
 $env:BP_TESTS_DIR = "F:\buddypress\tests"
 Write-Host -nonewline -ForegroundColor DarkRed "--> [BuddyPress] "
-Write-Host -ForegroundColor DarkMagenta "--> BuddyPress PHPUnit -> BP_TESTS_DIR   = $env:BP_TESTS_DIR variable... Done."
+Write-Host -ForegroundColor DarkMagenta "--> BuddyPress PHPUnit -> BP_TESTS_DIR   = $env:BP_TESTS_DIR"
 
 $env:BBP_TESTS_DIR = "F:\bbPress\tests"
 Write-Host -nonewline -ForegroundColor DarkRed "--> [bbPress] "
-Write-Host -ForegroundColor DarkMagenta "   --> bbPress PHPUnit    -> BBP_TESTS_DIR  = $env:BBP_TESTS_DIR variable... Done."
+Write-Host -ForegroundColor DarkMagenta "   --> bbPress PHPUnit    -> BBP_TESTS_DIR  = $env:BBP_TESTS_DIR"
 
 # Finish loading message
 Write-Host -ForegroundColor DarkGreen "--> Finish all the things..."
