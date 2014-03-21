@@ -9,6 +9,26 @@ Write-Host -ForegroundColor DarkGreen "--> Begin all the things..."
 # Environment Loading message
 Write-Host -ForegroundColor DarkGreen "--> Setup PowerShell Environment..."
 
+# Output the current colors
+Write-Host -nonewline -ForegroundColor DarkRed "--> [Colours] "
+Write-Host -nonewline -ForegroundColor Black       "Black       " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor DarkBlue    "DarkBlue    " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor DarkGreen   "DarkGreen   " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor DarkCyan    "DarkCyan    " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor DarkRed     "DarkRed     " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor DarkMagenta "DarkMagenta " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor DarkYellow  "DarkYellow  " -BackgroundColor Black
+Write-Host -ForegroundColor Gray                   "Gray        " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor DarkRed "--> [Colours] "
+Write-Host -nonewline -ForegroundColor DarkGray    "DarkGray    " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor Blue        "Blue        " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor Green       "Green       " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor Cyan        "Cyan        " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor Red         "Red         " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor Magenta     "Magenta     " -BackgroundColor Black
+Write-Host -nonewline -ForegroundColor Yellow      "Yellow      " -BackgroundColor Black
+Write-Host -ForegroundColor White                  "White       " -BackgroundColor Black
+
 # Setup local envionment paths
 $env:PSModulePath = $env:PSModulePath + ";C:\Users\Stephen\.dotfiles\powershell\modules\"
 $env:Path         = $env:Path         + ";C:\Users\Stephen\.dotfiles\powershell\profiles"
