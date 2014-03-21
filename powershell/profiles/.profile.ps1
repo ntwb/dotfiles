@@ -17,7 +17,7 @@ Write-Host -ForegroundColor DarkMagenta "PowerShell profiles & modules... Done."
 
 # Setup Sublime Text 3 alias & path
 Set-Alias subl "$HOME \.sublimetext\sublime_text.exe"
-$env:EDITOR = $HOME + "\.sublimetext\sublime_text.exe"
+$env:EDITOR = "subl -w"
 Write-Host -nonewline -ForegroundColor DarkRed "--> [Sublime Text 3] "
 Write-Host -ForegroundColor DarkMagenta "--> Sublime Text 3 'subl' alias, env:editor variable... Done."
 
