@@ -4,39 +4,46 @@
 
 [credential]
 
+[push]
+	default = simple
+
 [grep]
 	lineNumber = true
 	extendRegexp = true
 
 [alias]
 	g = grep --break --heading --line-number
-	l = log --abbrev-commit --graph -n 20 --format=format:'%C(green)(%cr) %C(magenta)%h%C(reset) %C(cyan)%d%C(reset) %s %C(yellow)<%an>%C(reset)'
-#	    log --abbrev-commit --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(bold white)- %cn%C(reset)%C(bold yellow)%d%C(reset)'
+#	l = log --abbrev-commit --graph -n 20 --all --format=format:'%C(magenta)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(yellow)- %cn%C(reset)%C(bold red)%d%C(reset)'
+
+
+#	l = log --abbrev-commit --graph -n 20 --format=format:'%C(green)(%cr) %C(magenta)%h%C(reset) %C(cyan)%d%C(reset) %s %C(yellow)<%an>%C(reset)'
+	l = log --abbrev-commit --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(bold white)- %cn%C(reset)%C(bold yellow)%d%C(reset)'
 
 [core]
-	editor = 'C:/Users/Stephen/.sublimetext/sublime_text.exe' -w
+	editor = "~/.sublimetext/sublime_text.exe -n -w"
 
 [color]
-  diff = auto
-  status = auto
-  branch = auto
 
-[color "diff"]
-  whitespace = blue reverse
-  meta = white
-  frag = yellow
-  old = red
-  new = green
-
-[color "status"]
-  changed = yellow
-  added = green
-  untracked = red
 
 [color "branch"]
-  current = green reverse
-  local = green
-  remote = blue
+	current = green reverse
+	local = yellow
+	remote = blue
+
+[color "diff"]
+	whitespace = blue reverse
+	meta = magenta
+	frag = yellow
+	old = red
+	new = green
+
+[color "status"]
+	added = yellow bold
+	changed = green bold
+	untracked = blue reverse
+	header = blue reverse
+	updated = red reverse
+	branch = green reverse
 
 # https://github.com/ntwb
 # https://twitter.com/netweb
