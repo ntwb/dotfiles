@@ -20,6 +20,7 @@
 
 [core]
 	editor = "subl -n -w"
+	autocrlf = true
 
 [color]
 
