@@ -13,17 +13,12 @@
 
 [alias]
 	g = grep --break --heading --line-number
-#	l = log --abbrev-commit --graph -n 20 --all --format=format:'%C(magenta)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(yellow)- %cn%C(reset)%C(bold red)%d%C(reset)'
-
-
-#	l = log --abbrev-commit --graph -n 20 --format=format:'%C(green)(%cr) %C(magenta)%h%C(reset) %C(cyan)%d%C(reset) %s %C(yellow)<%an>%C(reset)'
-	l = log --abbrev-commit --graph --all --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(bold white)- %cn%C(reset)%C(bold yellow)%d%C(reset)'
+	l = log --abbrev-commit --graph -n 20 --all --format=format:'%C(magenta)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(yellow)- %cn%C(reset)%C(bold red)%d%C(reset)'
 
 [core]
-	editor = "~/.sublimetext/sublime_text.exe -n -w"
+	editor = "subl -n -w"
 
 [color]
-
 
 [color "branch"]
 	current = green reverse
@@ -45,6 +40,11 @@
 	updated = red reverse
 	branch = green reverse
 
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+
 # https://github.com/ntwb
 # https://twitter.com/netweb
-# http://netweb.com.au
+# https://netweb.com.au
