@@ -20,29 +20,28 @@
 
 [core]
 	editor = "subl -n -w"
-	autocrlf = true
+#	autocrlf = true <- Windows will need this!
 
 [color]
 
 [color "branch"]
-	current = green reverse
-	local = yellow
-	remote = blue
+	current = 10 reverse
+	local = 11
+	remote = 12
 
 [color "diff"]
-	whitespace = blue reverse
-	meta = magenta
-	frag = yellow
-	old = red
-	new = green
+	whitespace = 12 reverse
+	meta = 13
+	frag = 11
+	old = 9
+	new = 10
 
 [color "status"]
-	added = yellow bold
-	changed = green bold
-	untracked = blue reverse
-	header = blue reverse
-	updated = red reverse
-	branch = green reverse
+	added = 11
+	changed = 10
+	untracked = 14
+	updated = 9 reverse
+	branch = 9
 
 [filter "media"]
 	required = true
