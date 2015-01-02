@@ -1,2 +1,3 @@
 # Standard Variavbles
 export EDITOR='subl'
+export SVN_EDITOR='subl -n -w'
