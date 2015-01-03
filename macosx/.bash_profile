@@ -14,7 +14,7 @@ export PS1='\n\e[0;32m\u@\h \e[0;94m\w$(__git_ps1 "\[\e[00;31m\] [%s]")\e[m\n\$ 
 
 # LS_COLORS via https://github.com/trapd00r/LS_COLORS
 # Using GNU Core Utils "brew install coreutils", apps aliased with a `g` prefix
-eval $(gdircolors -b $HOME/dircolors)
+eval $(gdircolors -b $HOME/.dircolors)
 # eval $(gdircolors -b dircolors)
 
 __git_complete g __git_maineval
