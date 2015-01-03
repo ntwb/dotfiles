@@ -6,3 +6,6 @@ Thumbs.db
 
 # Windows binary files (ToDo: Remove and/or commit files)
 bin/
+
+# Homebrew GitHub API KEY
+.homebrew-github-api-key
