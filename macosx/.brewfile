@@ -2,9 +2,12 @@ ack
 brew-cask
 coreutils
 git
+grunt-completion
 node
 openssl
 readline
 sqlite
 subversion
+vagrant-completion
 wget
+wpcli-completion
