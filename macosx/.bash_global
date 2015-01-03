@@ -1,3 +1,9 @@
 # Standard Variavbles
 export EDITOR='subl'
 export SVN_EDITOR='subl -n -w'
+
+# Homebrew GitHub API
+export HOMEBREW_GITHUB_API_TOKEN=$(cat $HOME/.homebrew-github-api-key)
+
+# ToDo: Use keychain for secure environment variables
+# export HOMEBREW_GITHUB_API_TOKEN=$(keychain homebrew-github-api-key)
