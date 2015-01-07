@@ -7,3 +7,7 @@ export HOMEBREW_GITHUB_API_TOKEN=$(cat $HOME/.homebrew-github-api-key)
 
 # ToDo: Use keychain for secure environment variables
 # export HOMEBREW_GITHUB_API_TOKEN=$(keychain homebrew-github-api-key)
+
+# Composer
+export COMPOSER_HOME="~\.composer"
+export PATH="~/.composer/vendor/bin/:$PATH"
