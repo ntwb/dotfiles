@@ -1,0 +1,17 @@
+{
+    "require": {
+        "phpdocumentor/phpdocumentor": "2.*",
+        "phpmd/phpmd" : "@stable",
+        "phpunit/php-text-template": "1.2.*",
+        "phpunit/phpcov": "*",
+        "phpunit/phpunit": "4.2.*",
+        "phpunit/phpunit-skeleton-generator": "*",
+        "psy/psysh": "@stable",
+        "sebastian/hhvm-wrapper": "2.0",
+        "sebastian/phpcpd": "*",
+        "sebastian/phpdcd": "*",
+        "squizlabs/php_codesniffer": "*",
+        "wp-cli/wp-cli": "*",
+        "wp-coding-standards/wpcs": "dev-master"
+    }
+}
