@@ -5,6 +5,7 @@ coreutils
 freetype
 gettext
 git
+gmp
 grunt-completion
 icu4c
 jpeg
@@ -14,6 +15,7 @@ node
 openssl
 php56
 readline
+shellcheck
 sqlite
 subversion
 unixodbc
