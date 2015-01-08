@@ -1,7 +1,7 @@
 {
 	"auto_match_enabled": true,
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Base16 Color Schemes/base16-monokai.dark.tmTheme",
+	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
 	"default_line_ending": "unix",
 	"detect_indentation": false,
 	"font_face": "Source Code Pro",
@@ -24,5 +24,6 @@
 	"translate_tabs_to_spaces": false,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true
+	"use_tab_stops": true,
+	"word_wrap": false
 }
