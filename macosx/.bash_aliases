@@ -14,6 +14,9 @@ alias ......="cd ../../../../../.."
 alias g='git'
 alias gs='git status'
 
+# SVN
+alias svn=colorsvn
+
 # Vagrant via Ryan McCue @rmccue
 alias v='vagrant'
 alias vup='vagrant up'
