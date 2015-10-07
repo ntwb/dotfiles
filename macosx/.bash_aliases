@@ -14,6 +14,13 @@ alias ......="cd ../../../../../.."
 alias g='git'
 alias gs='git status'
 
+# See https://github.com/Wilto/dotfiles/blob/master/bash/bash_aliases#L18-L22
+# Reset previous commit, but keep all the associated changes.
+alias goddammit="git reset --soft HEAD^"
+
+# Welp.
+alias heckit="git reset --hard HEAD"
+
 # SVN
 alias svn=colorsvn
 
