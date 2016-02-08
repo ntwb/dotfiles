@@ -29,6 +29,17 @@ alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo 
 alias g='git'
 alias gs='git status'
 
+# via https://github.com/paulirish/dotfiles/blob/master/.aliases#L52
+# Networking. IP address, dig, DNS
+alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+alias dig="dig +nocmd any +multiline +noall +answer"
+
+# Recursively delete `.DS_Store` files
+alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
+
+alias diskspace_report="df -P -kHl"
+alias free_diskspace_report="diskspace_report"
+
 # See https://github.com/Wilto/dotfiles/blob/master/bash/bash_aliases#L18-L22
 # Reset previous commit, but keep all the associated changes.
 alias goddammit="git reset --soft HEAD^"
