@@ -8,6 +8,33 @@ export HOMEBREW_GITHUB_API_TOKEN=$(cat $HOME/.homebrew-github-api-key)
 # ToDo: Use keychain for secure environment variables
 # export HOMEBREW_GITHUB_API_TOKEN=$(keychain homebrew-github-api-key)
 
+# PHP
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
 # Composer
-export COMPOSER_HOME="~\.composer"
-export PATH="~/.composer/vendor/bin/:$PATH"
+export COMPOSER_HOME="$HOME/.composer"
+export PATH="$COMPOSER_HOME/vendor/bin:$PATH"
+
+# ACK
+ACK_OPTIONS="--smart-case"
+export ACK_COLOR_MATCH="bold blue"
+export ACK_COLOR_FILENAME="green"
+export ACK_COLOR_LINENO="magenta"
+
+# Grep
+export GREP_COLORS="38;5;230:sl=38;5;137:cs=38;5;100:fn=38;5;238;3;1;48;5;232:ln=38;5;87;3:bn=38;5;232:se=38;5;232;48;5;232:cx=38;5;240:ms=48;5;231;38;5;196;4:mc=38;5;85;1;48;5;232:ne"
+
+# Homebrew Path
+export PATH="/usr/local/sbin:$PATH"
+
+# OS X 10.8 and newer come with php-fpm pre-installed, to ensure you are using the brew version you need to make sure /usr/local/sbin is before /usr/sbin in your PATH:
+# PATH="/usr/local/sbin:$PATH"
+# 3 MARCH 2015
+# /Users/netweb/.composer/vendor/bin:/usr/local/opt/php56/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:
+
+# WordPress
+export WP_TESTS_DIR="$HOME/dev/develop.svn.wordpress.org/trunk/tests/phpunit"
+export WP_DEVELOP_DIR="$HOME/dev/develop.svn.wordpress.org/trunk"
+export WP_ROOT_DIR="$HOME/dev/develop.svn.wordpress.org/trunk"
+export BP_TESTS_DIR="$HOME/dev/buddypress.svn.wordpress.org/trunk/tests/phpunit"
+export BBP_TESTS_DIR="$HOME/dev/bbpress.svn.wordpress.org/trunk/tests/phpunit"
