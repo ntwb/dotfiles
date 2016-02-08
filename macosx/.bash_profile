@@ -9,6 +9,23 @@
 source ~/.git-prompt.sh
 source ~/.git-completion.bash
 
+# via https://github.com/paulirish/dotfiles/blob/master/.bash_profile#L74
+##
+## Completion…
+##
+
+# bash completion.
+if  which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
+    source "$(brew --prefix)/share/bash-completion/bash_completion";
+elif [ -f /etc/bash_completion ]; then
+    source /etc/bash_completion;
+fi;
+
+# homebrew completion
+if  which brew > /dev/null; then
+    source `brew --repository`/Library/Contributions/brew_bash_completion.sh
+fi;
+
 # PS1 via Ryan McCue @rmccue
 export PS1='\n\e[0;32m\u@\h \e[0;94m\w$(__git_ps1 "\[\e[00;31m\] [%s]")\e[m\n\$ '
 
