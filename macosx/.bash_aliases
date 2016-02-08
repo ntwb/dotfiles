@@ -4,11 +4,26 @@ alias ls='gls -alh --group-directories-first --color'
 
 # cd via Aaron Jorbin @aaronjorbin
 alias ..="cd .."
+alias cd..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias .....="cd ../../../../.."
 alias ......="cd ../../../../../.."
+
+# mv, rm, cp
+alias mv='mv -v'
+alias rm='rm -i -v'
+alias cp='cp -v'
+
+# via https://github.com/paulirish/dotfiles/blob/master/.aliases#L39
+# `cat` with beautiful colors. requires: sudo easy_install -U Pygments
+alias c='pygmentize -O style=monokai -f console256 -g'
+
+# https://github.com/paulirish/dotfiles/blob/master/.aliases#L73
+# Update installed Ruby gems, Homebrew, npm, and their installed packages
+alias brew_update="brew -v update; brew -v upgrade --all; brew cleanup; brew cask cleanup; brew prune; brew doctor"
+alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo gem update --system; sudo gem update --no-rdoc --no-ri'
 
 # Git
 alias g='git'
