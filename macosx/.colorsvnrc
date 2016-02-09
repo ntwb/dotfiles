@@ -1,0 +1,57 @@
+# Sample colorsvnrc
+
+# These are the defaults
+
+# path to the svn binary
+svn: /usr/local/Library/ENV/4.3/svn 
+
+# Don't do color if our terminal type ($TERM) is one of these.
+# (List all terminal types on one line, seperated by whitespace.)
+# Remark: obsolete, only for backward capability
+nocolor: dumb other test
+
+# Do color if our terminal type ($TERM) is one of these.
+# (List all terminal types on one line, seperated by whitespace.)
+colortty: Eterm Eterm-256color Eterm-88color Eterm-color ansi ansi80x25 ansis color-xterm color_xterm console con132x25 con132x30 con132x43 con132x60 con80x25 con80x28 con80x30 con80x43 con80x50 con80x60 cons25 cygwin eterm eterm-color gnome gnome-256color konsole konsole-256color linux putty putty-256color putty-vt100 rxvt rxvt-16color rxvt-256color rxvt-88color rxvt-color rxvt-cygwin rxvt-cygwin-native rxvt-unicode rxvt-xpm screen screen-16color screen-256color screen.Eterm screen.gnome screen.konsole screen.linux screen.mlterm screen.rxvt screen.teraterm screen.vte screen.xterm-new screen.xterm-r6 screen.xterm-xfree86 st st-16color screen-256color vte vte-256color wsvt25 wsvt25m xfce xterm xterm-1002 xterm-1003 xterm-16color xterm-24 xterm-256color xterm-88color xterm-8bit xterm-basic xterm-bold xterm-color xterm-new xterm-nic xterm-noapp xterm-old xterm-pcolor xterm-r5 xterm-r6 xterm-utf8 xterm-vt220 xterm-vt52 xterm-xf86-v32 xterm-xf86-v33 xterm-xf86-v333 xterm-xf86-v40 xterm-xf86-v43 xterm-xf86-v44 xterm-xfree96 xterm-xi xterms
+
+
+
+# The following groups of attributes may be combined for a given color:
+#
+# clear         black      on_black
+# reset         red        on_red
+# bold          green      on_green
+# underline     yellow     on_yellow
+# underscore    blue       on_blue
+# blink         magenta    on_magenta
+# reverse       cyan       on_cyan
+# concealed     white      on_white
+
+# colors for different types of status messages
+
+A: cyan
+C: red
+D: red
+G: blue
+I: bold
+M: blue
+P: reset
+R: cyan
+U: green
+?: reset
+!: red
+~: red
+
+# use bold font for directory
+bolddir: true
+
+# this is for server messages
+server: green
+
+# this is for warnings
+warning: cyan
+
+# only chosen commands
+# available commands: add blame cat changelist  checkout cleanup commit copy delete diff export help info list log merge mergeinfo  mkdir move patch propdel propedit propget proplist propset relocate resolve resolved revert status switch unlock update upgrade 
+commands: add changelist checkout copy delete export move propdel propget status update
+
