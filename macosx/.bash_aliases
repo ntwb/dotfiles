@@ -28,6 +28,7 @@ alias update_brew_npm_gem='brew_update; npm install npm -g; npm update -g; sudo 
 # Git
 alias g='git'
 alias gs='git status'
+alias gcm='git checkout master'
 
 # via https://github.com/paulirish/dotfiles/blob/master/.aliases#L52
 # Networking. IP address, dig, DNS
