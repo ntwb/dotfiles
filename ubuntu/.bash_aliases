@@ -17,4 +17,5 @@ alias cp='cp -v'
 # Git
 alias g='git'
 alias gs='git status'
+alias gd='git diff'
 alias gcm='git checkout master'
