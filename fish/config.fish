@@ -1,1 +1,6 @@
-#!/usr/bin/env fish
+
+# Navigation
+function ..    ; cd .. ; end
+function ...   ; cd ../.. ; end
+function ....  ; cd ../../.. ; end
+function ..... ; cd ../../../.. ; end
