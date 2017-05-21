@@ -9,3 +9,6 @@ bin/
 
 # Homebrew GitHub API KEY
 .homebrew-github-api-key
+
+# Fish
+config.local.fish
