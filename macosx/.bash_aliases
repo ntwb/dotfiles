@@ -12,9 +12,9 @@ alias .....="cd ../../../../.."
 alias ......="cd ../../../../../.."
 
 # mv, rm, cp
-alias mv='mv -v'
+alias mv='mv -i'
 alias rm='rm -i -v'
-alias cp='cp -v'
+alias cp='cp -i'
 
 # via https://github.com/paulirish/dotfiles/blob/master/.aliases#L39
 # `cat` with beautiful colors. requires: sudo easy_install -U Pygments
