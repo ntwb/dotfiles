@@ -1,30 +1,28 @@
 {
-	"auto_match_enabled": true,
+	"added_words":
+	[
+		"stylelint",
+		"Monokai"
+	],
 	"close_windows_when_empty": true,
-	"color_scheme": "Packages/Monokai Extended/Monokai Extended.tmTheme",
+	"color_scheme": "Packages/Theme - Monokai Pro/Monokai Pro.tmTheme",
 	"default_line_ending": "unix",
-	"detect_indentation": false,
-	"font_face": "Source Code Pro",
+	"font_face": "Input Mono",
 	"font_size": 12,
-	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"margin": 4,
 	"rulers":
 	[
 		80
 	],
 	"show_full_path": true,
-	"soda_classic_tabs": false,
-	"tab_completion": true,
 	"tab_size": 4,
-	"theme": "Soda Dark 3.sublime-theme",
-	"translate_tabs_to_spaces": false,
+	"theme": "Monokai Pro.sublime-theme",
+	"theme_scrollbar_line": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
-	"use_tab_stops": true,
 	"word_wrap": false
 }
