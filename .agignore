@@ -1,0 +1,4 @@
+tmp
+.git/
+.cache
+node_modules/
