@@ -1,0 +1,10 @@
+// Modific user settings
+{
+    // if true, plugin prints some debug information to the console window
+    "debug": false,
+
+    // Turn this option on if you're using SVN 1.7 or higher
+    // this instructs Subversion to use its built-in differencing engine
+    // despite any external differencing mechanism that may be specified for use in the user's runtime configuration.
+    "svn_use_internal_diff": true
+}
