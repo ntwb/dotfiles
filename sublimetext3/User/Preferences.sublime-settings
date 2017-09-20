@@ -7,13 +7,12 @@
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/Theme - Monokai Pro/Monokai Pro.tmTheme",
 	"default_line_ending": "unix",
+	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Input Mono",
-	"font_size": 12,
+	"font_size": 13,
 	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
+	"monokai_pro_highlight_open_folders": true,
+	"monokai_pro_minimal": true,
 	"rulers":
 	[
 		80
@@ -24,5 +23,5 @@
 	"theme_scrollbar_line": true,
 	"trim_automatic_white_space": true,
 	"trim_trailing_white_space_on_save": true,
-	"word_wrap": false
+	"word_wrap": "auto"
 }
