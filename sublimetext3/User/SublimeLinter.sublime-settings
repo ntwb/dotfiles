@@ -1,119 +1,100 @@
 {
-    "user": {
-        "debug": false,
-        "delay": 0.25,
-        "error_color": "D02000",
-        "gutter_theme": "Packages/Theme - Monokai Pro/Monokai_Pro/gutter/Monokai Pro.gutter-theme",
-        "gutter_theme_excludes": [],
-        "lint_mode": "background",
-        "linters": {
-            "annotations": {
-                "@disable": false,
-                "args": [],
-                "errors": [
-                    "FIXME"
-                ],
-                "excludes": [],
-                "warnings": [
-                    "rXXXX",
-                    "NOTE",
-                    "README",
-                    "TODO",
-                    "@todo",
-                    "XXX",
-                    "WIP"
-                ]
-            },
-            "apiblueprint": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "eslint": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "flow": {
-                "@disable": false,
-                "args": [],
-                "excludes": [],
-                "flow-bin": null,
-                "show-all-errors": true
-            },
-            "htmltidy": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "json": {
-                "@disable": false,
-                "args": [],
-                "excludes": [],
-                "strict": true
-            },
-            "phpcs": {
-                "@disable": false,
-                "args": [],
-                "excludes": [],
-                "standard": "WordPress"
-            },
-            "pyyaml": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            },
-            "scss": {
-                "@disable": true,
-                "args": [],
-                "exclude-linter": "",
-                "excludes": [],
-                "include-linter": ""
-            },
-            "shellcheck": {
-                "@disable": false,
-                "args": [],
-                "exclude": "",
-                "excludes": []
-            },
-            "stylelint": {
-                "@disable": false,
-                "args": [],
-                "excludes": []
-            }
+    "debug": false,
+    "delay": 0.25,
+    "gutter_theme": "Packages/Theme - Monokai Pro/Monokai_Pro/gutter/Monokai Pro.gutter-theme",
+    "lint_mode": "background",
+    "linters": {
+        "annotations": {
+            "args": [],
+            "disable": false,
+            "errors": [
+                "FIXME"
+            ],
+            "excludes": [],
+            "warnings": [
+                "rXXXX",
+                "NOTE",
+                "README",
+                "TODO",
+                "@todo",
+                "XXX",
+                "WIP"
+            ]
         },
-        "mark_style": "outline",
-        "no_column_highlights_line": false,
-        "passive_warnings": false,
-        "paths": {
-            "linux": [],
-            "osx": [],
-            "windows": []
+        "apiblueprint": {
+            "args": [],
+            "disable": false,
+            "excludes": []
         },
-        "python_paths": {
-            "linux": [],
-            "osx": [],
-            "windows": []
+        "eslint": {
+            "args": [],
+            "disable": false,
+            "excludes": []
         },
-        "rc_search_limit": 3,
-        "shell_timeout": 10,
-        "show_errors_on_save": false,
-        "show_marks_in_minimap": true,
-        "syntax_map": {
-            "html (django)": "html",
-            "html (rails)": "html",
-            "html 5": "html",
-            "javascript (babel)": "javascript",
-            "magicpython": "python",
-            "php": "html",
-            "python django": "python",
-            "pythonimproved": "python"
+        "flow": {
+            "args": [],
+            "disable": false,
+            "excludes": [],
+            "executable": null,
+            "show-all-errors": true
         },
-        "tooltip_fontsize": "1rem",
-        "tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
-        "tooltip_theme_excludes": [],
-        "tooltips": true,
-        "warning_color": "DDB700",
-        "wrap_find": true
+        "htmltidy": {
+            "args": [],
+            "disable": false,
+            "excludes": []
+        },
+        "json": {
+            "args": [],
+            "disable": false,
+            "excludes": [],
+            "strict": true
+        },
+        "phpcs": {
+            "args": [],
+            "disable": false,
+            "excludes": [],
+            "standard": "WordPress"
+        },
+        "pyyaml": {
+            "args": [],
+            "disable": false,
+            "excludes": []
+        },
+        "scss": {
+            "args": [],
+            "disable": true,
+            "exclude-linter": "",
+            "excludes": [],
+            "include-linter": ""
+        },
+        "shellcheck": {
+            "args": [],
+            "disable": false,
+            "exclude": "",
+            "excludes": []
+        },
+        "stylelint": {
+            "args": [],
+            "disable": false,
+            "excludes": []
+        }
+    },
+    "no_column_highlights_line": false,
+    "paths": {
+        "linux": [],
+        "osx": [],
+        "windows": []
+    },
+    "shell_timeout": 10,
+    "show_marks_in_minimap": true,
+    "syntax_map": {
+        "html (django)": "html",
+        "html (rails)": "html",
+        "html 5": "html",
+        "javascript (babel)": "javascript",
+        "magicpython": "python",
+        "php": "html",
+        "python django": "python",
+        "pythonimproved": "python"
     }
 }
