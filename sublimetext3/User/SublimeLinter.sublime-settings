@@ -1,37 +1,37 @@
 // SublimeLinter Settings - User
 {
-    "debug": false,
-    "delay": 0.25,
-    "gutter_theme": "Packages/Theme - Monokai Pro/Monokai_Pro/gutter/Monokai Pro.gutter-theme",
-    "lint_mode": "background",
-    "linters": {
-        "phpcs": {
-            "args": [],
-            "disable": false,
-            "excludes": [],
-            "standard": "WordPress"
-        },
-        "pyyaml": {
-            "args": [],
-            "disable": false,
-            "excludes": []
-        },
-    },
-    "no_column_highlights_line": false,
-    "paths": {
-        "linux": [],
-        "osx": [],
-        "windows": []
-    },
-    "show_marks_in_minimap": true,
-    "syntax_map": {
-        "html (django)": "html",
-        "html (rails)": "html",
-        "html 5": "html",
-        "javascript (babel)": "javascript",
-        "magicpython": "python",
-        "php": "html",
-        "python django": "python",
-        "pythonimproved": "python"
-    }
+	"debug": false,
+	"delay": 0.25,
+	"gutter_theme": "Packages/Theme - Monokai Pro/Monokai_Pro/gutter/Monokai Pro.gutter-theme",
+	"lint_mode": "background",
+	"linters": {
+		"phpcs": {
+			"args": [],
+			"disable": false,
+			"excludes": [],
+			"standard": "WordPress"
+		},
+		"pyyaml": {
+			"args": [],
+			"disable": false,
+			"excludes": []
+		},
+	},
+	"no_column_highlights_line": false,
+	"paths": {
+		"linux": [],
+		"osx": [],
+		"windows": []
+	},
+	"show_marks_in_minimap": true,
+	"syntax_map": {
+		"html (django)": "html",
+		"html (rails)": "html",
+		"html 5": "html",
+		"javascript (babel)": "javascript",
+		"magicpython": "python",
+		"php": "html",
+		"python django": "python",
+		"pythonimproved": "python"
+	}
 }
