@@ -1,54 +1,10 @@
+// SublimeLinter Settings - User
 {
     "debug": false,
     "delay": 0.25,
     "gutter_theme": "Packages/Theme - Monokai Pro/Monokai_Pro/gutter/Monokai Pro.gutter-theme",
     "lint_mode": "background",
     "linters": {
-        "annotations": {
-            "args": [],
-            "disable": false,
-            "errors": [
-                "FIXME"
-            ],
-            "excludes": [],
-            "warnings": [
-                "rXXXX",
-                "NOTE",
-                "README",
-                "TODO",
-                "@todo",
-                "XXX",
-                "WIP"
-            ]
-        },
-        "apiblueprint": {
-            "args": [],
-            "disable": false,
-            "excludes": []
-        },
-        "eslint": {
-            "args": [],
-            "disable": false,
-            "excludes": []
-        },
-        "flow": {
-            "args": [],
-            "disable": false,
-            "excludes": [],
-            "executable": null,
-            "show-all-errors": true
-        },
-        "htmltidy": {
-            "args": [],
-            "disable": false,
-            "excludes": []
-        },
-        "json": {
-            "args": [],
-            "disable": false,
-            "excludes": [],
-            "strict": true
-        },
         "phpcs": {
             "args": [],
             "disable": false,
@@ -60,24 +16,6 @@
             "disable": false,
             "excludes": []
         },
-        "scss": {
-            "args": [],
-            "disable": true,
-            "exclude-linter": "",
-            "excludes": [],
-            "include-linter": ""
-        },
-        "shellcheck": {
-            "args": [],
-            "disable": false,
-            "exclude": "",
-            "excludes": []
-        },
-        "stylelint": {
-            "args": [],
-            "disable": false,
-            "excludes": []
-        }
     },
     "no_column_highlights_line": false,
     "paths": {
@@ -85,7 +23,6 @@
         "osx": [],
         "windows": []
     },
-    "shell_timeout": 10,
     "show_marks_in_minimap": true,
     "syntax_map": {
         "html (django)": "html",
