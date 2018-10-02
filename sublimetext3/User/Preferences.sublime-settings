@@ -4,6 +4,24 @@
 		"stylelint",
 		"Monokai"
 	],
+	"binary_file_patterns":
+	[
+		"node_modules/*",
+		"vendor/*",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
 	"close_windows_when_empty": true,
 	"color_scheme": "Packages/Theme - Monokai Pro/Monokai Pro.tmTheme",
 	"default_line_ending": "unix",
@@ -13,6 +31,10 @@
 	"highlight_modified_tabs": true,
 	"monokai_pro_highlight_open_folders": true,
 	"monokai_pro_minimal": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
 	"rulers":
 	[
 		80
