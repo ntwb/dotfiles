@@ -4,8 +4,5 @@ Thumbs.db
 # Mac crap
 .DS_Store
 
-# Homebrew GitHub API KEY
-.homebrew-github-api-key
-
 # Fish
 config.local.fish
