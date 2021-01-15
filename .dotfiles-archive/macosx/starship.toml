@@ -1,0 +1,59 @@
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+threshold = 10
+style = "bold red"
+
+[[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+threshold = 30
+style = "bold yellow"
+
+[directory]
+truncate_to_repo = false
+
+[git_branch]
+symbol = ""
+
+[git_commit]
+commit_hash_length = 7
+
+[git_state]
+progress_divider = " of "
+cherry_pick = "🍒 PICKING"
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = " 🤷‍"
+stashed = " 📦"
+modified = " 📝"
+staged.value = "++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+renamed = "👅"
+deleted = "🗑"
+
+[package]
+disabled = true
+
+[java]
+disabled = true
+
+[nodejs]
+disabled = false
+
+[php]
+disabled = true
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
