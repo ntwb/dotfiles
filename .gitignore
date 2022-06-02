@@ -6,3 +6,6 @@ Thumbs.db
 
 # Fish
 config.local.fish
+
+# GitHub Codespaces
+.venv
