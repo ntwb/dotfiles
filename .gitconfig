@@ -22,7 +22,7 @@
 	l = log --abbrev-commit --graph -n 20 --all --format=format:'%C(magenta)%h%C(reset) - %C(bold green)(%cr)%C(reset) %C(white)%s%C(reset) %C(yellow)- %cn%C(reset)%C(bold red)%d%C(reset)'
 
 [core]
-	editor = "subl -n -w"
+	editor = "code -n -w"
 #	autocrlf = true <- Windows will need this!
 
 [color]
