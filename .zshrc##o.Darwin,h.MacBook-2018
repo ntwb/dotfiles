@@ -1,5 +1,7 @@
 # this MacBook-2018
 
-alias code='nix shell nixpkgs#vscode --command code'
+# alias code='nix shell nixpkgs#vscode --command code'
+# export PATH="$PATH:$(nix eval --raw nixpkgs#vscode)/Contents/Resources/app/bin"
 
-export PATH="$PATH:$(nix eval --raw nixpkgs#vscode)/Contents/Resources/app/bin"
+export EDITOR='code'
+alias code='nix shell nixpkgs#vscode --command code'
