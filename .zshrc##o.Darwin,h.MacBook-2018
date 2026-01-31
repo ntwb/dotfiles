@@ -1,7 +1,19 @@
-# this MacBook-2018
+# This MacBook-2018
 
-# alias code='nix shell nixpkgs#vscode --command code'
-# export PATH="$PATH:$(nix eval --raw nixpkgs#vscode)/Contents/Resources/app/bin"
+# YADM
+alias yadm='nix shell nixpkgs#yadm --command yadm'
 
+# ripgrep
+alias rg='nix shell nixpkgs#ripgrep --command rg'
+
+# GitHub CLI
+alias gh='nix shell nixpkgs#gh --command gh'
+
+# VS Code (permanent after nix profile install)
 export EDITOR='code'
 alias code='nix shell nixpkgs#vscode --command code'
+# alias code='code'  # Now native after nix profile install
+
+# Git workflow
+alias g='git'
+alias gap='git add -p'
