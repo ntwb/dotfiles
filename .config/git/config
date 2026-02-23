@@ -54,3 +54,5 @@
 # https://github.com/ntwb
 # https://twitter.com/netweb
 # https://netweb.com.au
+[pull]
+	rebase = true
