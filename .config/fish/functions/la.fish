@@ -1,6 +1,6 @@
-function la --wraps exa
-    if command --search exa > /dev/null
-        exa -la $argv
+function la --wraps eza
+    if command --search eza > /dev/null
+        eza -la $argv
     else
         ls -lah $argv
     end

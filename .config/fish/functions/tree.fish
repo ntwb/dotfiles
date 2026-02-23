@@ -1,6 +1,6 @@
-function tree --wraps exa
-    if command --search exa
-        exa --long --git --tree
+function tree --wraps eza
+    if command --search eza
+        eza --long --git --tree
     else
         tree
     end
